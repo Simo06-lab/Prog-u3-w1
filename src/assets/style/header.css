@@ -1,0 +1,66 @@
+.netflix-logo {
+  max-width: 120px;
+}
+
+.profile-img {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#searchInput {
+  width: 0;
+  opacity: 0;
+  padding: 6px 10px;
+  margin-right: 8px;
+  background: #111;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+#searchInput.open {
+  width: 180px;
+  opacity: 1;
+}
+
+header .dropdown-menu.bg-dark .dropdown-item:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.3) 60%,
+    transparent 100%
+  );
+}
