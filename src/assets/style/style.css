@@ -1,135 +1,64 @@
+body {
+  min-width: 400px;
+  background-color: #141414;
+}
+
 .netflix-logo {
   max-width: 120px;
 }
+
 .profile-img {
   width: 32px;
   height: 32px;
   overflow: hidden;
 }
+
 .profile-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-shrink: 0;
-}
-.nav-icons svg {
-  flex-shrink: 0;
-}
-.kids-badge {
-  flex-shrink: 0;
-}
-body {
-  min-width: 400px;
-  background-color: #141414;
-}
-.border-svg {
-  border: 1px solid #fff;
-  padding: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 3px 8px;
-}
+
 .scrollRow {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  overflow-y: auto;
   scroll-behavior: smooth;
-  padding: 0;
 }
+
 .scrollRow::-webkit-scrollbar {
   display: none;
 }
+
 .prevBtn,
 .nextBtn {
   top: 50%;
-  background: 0 0;
+  background: none;
   border: none;
   cursor: pointer;
   z-index: 10;
   font-size: 4rem !important;
 }
-.copyright {
-  font-size: 10px;
-}
-.drop-dawn {
-  min-width: 120px;
-  border-radius: 2px;
-  border-color: #555;
-  padding: 2px 7px;
-  background-color: #000;
-}
 .font-footer {
   color: #909090;
 }
-.check {
-  width: 25px;
-  height: 25px;
-  border: 2px solid #282828;
-  background-color: transparent;
-  border-radius: 0;
-  appearance: none;
-  -webkit-appearance: none;
-  cursor: pointer;
-}
-.check:checked {
-  background-color: transparent;
-  border-color: #282828;
-}
-.cursor-pointer {
-  cursor: pointer;
-}
-.dropdown-menu.bg-dark .dropdown-item:hover {
-  background-color: transparent;
-  color: #fff;
-}
-.img-wrapper {
-  position: relative;
-}
+
 .item {
+  padding: 2px;
   transition: transform 0.3s ease;
 }
+
 .item:hover {
-  transform: scale(1.03);
-  position: relative;
+  transform: scale(1.05);
 }
 .preview-img {
   width: 100%;
-  border-radius: 4px;
-  transition: transform 0.3s ease;
+  height: 300px;
+  object-fit: cover;
+  background-color: transparent;
+  padding: 4px;
 }
-.info-box {
-  background: #141414;
-  color: #fff;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 4px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.info-box.show {
-  opacity: 1;
-}
-.icons i {
-  font-size: 20px;
-  margin-right: 12px;
-  cursor: pointer;
-}
-.details span {
-  margin-right: 5px;
-  opacity: 0.8;
-}
-.tags {
-  margin-top: 5px;
-  opacity: 0.7;
-}
+
 .search-container {
   position: relative;
   display: flex;
@@ -151,4 +80,64 @@ body {
 #searchInput.open {
   width: 180px;
   opacity: 1;
+}
+
+.dropdown-menu.bg-dark .dropdown-item:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+copyright {
+  font-size: 10px;
+}
+
+.netflix-loader-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.netflix-loader {
+  width: 60px;
+  height: 60px;
+  border: 4px solid #e50914;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.section-title {
+  color: white;
+  margin-left: 0;
+  padding-left: 0;
+  font-weight: 600;
+}
+.border-svg {
+  border: 1px solid #fff;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 3px 8px;
+}
+
+@media (min-width: 1200px) {
+  .col-xl-8col {
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+  }
+}
+.drop-dawn {
+  min-width: 120px;
+  border-radius: 2px;
+  border-color: #555;
+  padding: 2px 7px;
+  background-color: #000;
 }
