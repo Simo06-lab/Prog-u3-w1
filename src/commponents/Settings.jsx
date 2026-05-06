@@ -1,11 +1,8 @@
 import kidsIcon from "../assets/img/kids_icon.png"
-import SettingsHeader from "../commponents/SettingHeader"
 
 export default function SettingsPage() {
   return (
     <>
-      <SettingsHeader />
-
       <div className="text-white" style={{ backgroundColor: "#fff" }}>
         <main className="container py-4 text-black">
           <h1 className="fw-normal mb-3">Account</h1>
