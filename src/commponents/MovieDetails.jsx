@@ -14,7 +14,7 @@ function MovieDetails() {
       .then((data) => {
         setMovie(data)
         return fetch(
-          `https://striveschool-api.herokuapp.com/api/comments/${data.Title}`,
+          `https://striveschool-api.herokuapp.com/api/comments/${movieId}`,
           {
             headers: {
               Authorization: "Bearer …",
